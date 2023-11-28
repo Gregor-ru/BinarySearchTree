@@ -30,7 +30,6 @@ TreeNode* BinarySearchTree::buildBST(MyList<int>& values, int start, int end) {
 
     int mid = (start + end) / 2;
 
-    // Using your implementation of linked list iterator
     MyList<int>::ListNode* midNode = values.begin();
     for (int i = 0; i < mid; ++i) {
         midNode = midNode->next;
